@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <!-- Home and About Section -->
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="Home"/>
+    </group>
+
+    <!-- Analysis Section -->
+    <group android:checkableBehavior="single">
+        <item
+            android:title="Analysis">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_ph"
+                        android:icon="@drawable/ph"
+                        android:title="pH"/>
+                    <item
+                        android:id="@+id/nav_temperature"
+                        android:icon="@drawable/temperature"
+                        android:title="Temperature"/>
+                    <item
+                        android:id="@+id/nav_hardness"
+                        android:icon="@drawable/hardness"
+                        android:title="Hardness"/>
+                    <item
+                        android:id="@+id/nav_oxygen"
+                        android:icon="@drawable/oxygen"
+                        android:title="Oxygen"/>
+                </group>
+            </menu>
+        </item>
+    </group>
+
+    <!-- Logout Section -->
+    <group android:checkableBehavior="single">
+        <item
+            android:title="">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_logout"
+                        android:icon="@drawable/logout"
+                        android:title="Logout"/>
+                </group>
+            </menu>
+        </item>
+    </group>
+
+</menu>

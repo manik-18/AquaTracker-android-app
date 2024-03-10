@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/text_receive_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Receive Notifications?"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="16dp"
+            android:layout_centerHorizontal="true"/>
+
+        <!-- Add Buttons -->
+        <LinearLayout
+            android:id="@+id/buttons_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/text_receive_notification"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/button_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/pink"
+                android:layout_marginEnd="16dp"/>
+
+            <Button
+                android:id="@+id/button_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/pink"/>
+        </LinearLayout>
+
+        <!-- Welcome to Aquarium Heading -->
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="👋 Welcome to Aquarium Parameter Monitoring! 🐠🌊"
+            android:textSize="25sp"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="32dp"
+            android:textStyle="bold"
+            android:textColor="@color/pink"/>
+
+        <!-- Aquarium Image -->
+        <ImageView
+            android:id="@+id/image_aquarium"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/aquarium"
+            android:scaleType="centerCrop"
+            android:layout_below="@id/heading"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Welcome Message -->
+        <TextView
+            android:id="@+id/text_welcome_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monitor crucial aspects of your aquarium, including pH levels, hardness, temperature, dissolved oxygen, and overall fish health effortlessly through our user-friendly website and app. Stay informed with timely notifications on any deviations in your aquarium parameters, ensuring the well-being of your aquatic companions. Dive into a seamless monitoring experience for a thriving aquarium environment! 🐟📊"
+            android:textSize="16sp"
+            android:layout_below="@id/image_aquarium"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16sp"
+            android:textColor="@android:color/black"/>
+
+        <!-- Aquarium GIF Image -->
+        <ImageView
+            android:id="@+id/image_aquarium_gif"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/aquariumgif"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="16sp"
+            android:layout_below="@id/text_welcome_message"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Our Services Heading -->
+        <TextView
+            android:id="@+id/heading_services"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_aquarium_gif"
+            android:layout_marginTop="16sp"
+            android:layout_marginBottom="16dp"
+            android:text="Our Services"
+            android:textAlignment="center"
+            android:textColor="@color/pink"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <!-- Service Card 1 -->
+        <LinearLayout
+            android:id="@+id/service_card_monitoring"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:padding="16dp"
+            android:layout_below="@id/heading_services"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/monitoring"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monitor Aquarium Parameters"
+                android:textSize="18sp"
+                android:textColor="@color/purple"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Track pH, hardness, temperature, and dissolved oxygen levels in your aquarium."
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+
+        <!-- Service Card 2 -->
+        <LinearLayout
+            android:id="@+id/service_card_alerts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:padding="16dp"
+            android:layout_below="@id/service_card_monitoring"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/alert"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Special Alerts to User"
+                android:textSize="18sp"
+                android:textColor="@color/purple"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Receive notifications if any fish is diseased or if aquarium parameters deviate from the ideal range."
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+
+        <!-- Service Card 3 -->
+        <LinearLayout
+            android:id="@+id/service_card_easy_to_use"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:padding="16dp"
+            android:layout_below="@id/service_card_alerts"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/easytouse"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Easy to Use"
+                android:textSize="18sp"
+                android:textColor="@color/purple"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User-friendly interface for seamless aquarium management."
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</ScrollView>
